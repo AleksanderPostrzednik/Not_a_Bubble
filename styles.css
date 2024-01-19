@@ -1,0 +1,94 @@
+/* This is a simplified version of the styles for brevity, focusing on structure and layout */
+/* Full BEM methodology and responsive styles will be implemented in the final code */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header__logo {
+    font-weight: bold;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.hero {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__title {
+    font-size: 3em;
+    color: red;
+}
+
+.hero__tagline {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.hero__buy-btn {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hero__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.products {
+    background-color: #8ecae6;
+    padding: 50px 20px;
+}
+
+.products__title {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.rules {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.rules__title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
