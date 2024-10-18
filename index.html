@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop It! - Najlepsza zabawka antystresowa</title>
+    <title>Pop It!</title>
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
-
 <body>
-    <header class="header">
-        <div class="header__logo">NOT_A_BUBBLE.COM</div>
-        <nav class="header__nav">
-            <a href="#about" class="nav__link">O NAS</a>
-            <a href="#sale" class="nav__link">WYPRZEDAŻ</a>
-            <a href="#contacts" class="nav__link">KONTAKT</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1 class="hero__title">POP IT!</h1>
-            <p class="hero__tagline">Najlepsza zabawka antystresowa to niekończąca się bąbelkowa folia!</p>
-            <button class="hero__buy-btn">KUP</button>
-            <img src="images/background.png" alt="Zabawka Pop It" class="hero__image">
+    <div class="hero-container">
+        <header class="header container">
+            <div class="header__logo">NOT_A_BUBBLE.COM</div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">ABOUT</a></li>
+                    <li class="header__nav-item"><a href="#">SALE</a></li>
+                    <li class="header__nav-item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="header__burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <section class="container hero">
+            <div class="hero__content">
+                <h1 class="hero__title no-margin">POP IT!</h1>
+                <p class="hero__subtitle">Best Antistress Toy is the Endless toy bubble wrap!</p>
+                <button class="btn">BUY</button>
+            </div>
         </section>
-
-        <section class="description" id="about">
-            <h2 class="description__title">Czym właściwie jest Pop it?</h2>
-            <p class="description__text">
-                To gra dla dzieci, w której proces można porównać do pękania folii bąbelkowej. Jednak w przeciwieństwie do folii, pop-it można naciskać z tymi samymi charakterystycznymi odczuciami i dźwiękami "bez końca"; dziesiątki silikonowych bąbelków są po prostu wyciskane w przeciwnym kierunku.
-            </p>
+    </div>
+    <main class="main">
+        <section class="description">
+            <h2>What is Pop it exactly?</h2>
+            <p class="description__text">This is a child's game, in which the process can be compared to the bursting of a bubble wrap. But unlike film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly": dozens of silicone bubbles are simply squeezed out in the other direction.</p>
         </section>
-
-        <section class="products" id="sale">
-            <h2 class="products__title">Wybierz swój Pop-It!</h2>
-            <div class="products__items">
-                <div class="product__item">
-                    <img src="images/square.png" alt="Pop It wielokolorowy kwadrat" class="product__image">
-                    <button class="product__buy-btn">KUP</button>
+        <section class="products">
+            <h2>Choose your Pop-It!</h2>
+            <div class="products__list">
+                <div class="products__item">
+                    <img src="images/square.png" alt="Multicolored square">
+                    <p class="products__name">Multicolored square</p>
+                    <button class="btn btn-secondary">BUY</button>
                 </div>
-                <div class="product__item">
-                    <img src="images/amongus.png" alt="Pop It Among Us, marmurkowy" class="product__image">
-                    <button class="product__buy-btn">KUP</button>
+                <div class="products__item">
+                    <img src="images/amongus.png" alt="Among Us, marbled">
+                    <p class="products__name">Among Us, marbled</p>
+                    <button class="btn btn-secondary">BUY</button>
                 </div>
-                <div class="product__item">
-                    <img src="images/round.png" alt="Pop It wielokolorowy okrągły" class="product__image">
-                    <button class="product__buy-btn">KUP</button>
+                <div class="products__item">
+                    <img src="images/round.png" alt="Multicolored round">
+                    <p class="products__name">Multicolored round</p>
+                    <button class="btn btn-secondary">BUY</button>
                 </div>
             </div>
         </section>
-
         <section class="rules">
-            <h2 class="rules__title">Zasady gry</h2>
-            <p class="rules__text">
-                Gracze na zmianę klikają na wypukłości. Należy dokończyć rzęd, który się zaczął. Możesz nacisnąć maksymalnie 3 bąbelki jednocześnie (muszą być blisko siebie, nie można naciskać kilku pryszczy naraz, jeśli nie są blisko siebie). Zadaniem jest zmusić przeciwnika do ostatniego ruchu. Kto poszedł ostatni - ten przegrał!
-            </p>
-            <img src="images/photo.jpg" alt="Gra w Pop It" class="rules__image">
+            <div class="rules__content">
+                <h2>Rules of the game</h2>
+                <p class="rules__text">Players take turns and click on the bumps. It is imperative to finish the row that you started. You can press a maximum of 3 bubbles at the same time (they must be near, you cannot press several pimples at once, if they are not close to each other). The task is to make the opponent go last. Who went last - he lost!</p>
+            </div>
+            <img src="images/photo.jpg" alt="Playing Pop It" class="rules__image">
         </section>
     </main>
-
     <footer class="footer">
-        <div class="footer__logo">NOT_A_BUBBLE.COM</div>
-        <div class="footer__links">
-            <a href="#" class="footer__link">Metody płatności</a>
-            <a href="#" class="footer__link">Dostawa</a>
-            <a href="#" class="footer__link">Sprzedaż hurtowa</a>
-            <a href="#" class="footer__link">Kontakt</a>
+        <div class="footer__content">
+            <h3><p class="footer__text">NOT_A_BUBBLE.COM</p></h3>
+            <p class="footer__text">Payment Methods</p>
+            <p class="footer__text">Delivery</p>
+            <p class="footer__text">Wholesale</p>
+            <p class="footer__text">Contacts</p>
         </div>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
-
 </html>

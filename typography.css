@@ -1,0 +1,32 @@
+h1 {
+    font-size: 140px;    
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 1000;
+    line-height: 1.2;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 16px;
+}
+
+.no-margin {
+    margin-bottom: 0;
+}
